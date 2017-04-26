@@ -1,0 +1,344 @@
+/* top */
+
+.ft-top-bkg {
+  height: 600px;
+  background-image: url('/img/rectangle-2-copy-3@3x.png');
+}
+.ft-top-logo {
+  width: 400px;
+  height: 118px;
+  background-image: url('/img/asset-1-copy@3x.png');
+}
+@media (max-width: 959px) {
+  .ft-top-bkg {
+    height: 300px;
+    background-image: url('/img/rectangle-2-copy-3.png');
+  }
+  .ft-top-logo {
+    width: 200px;
+    height: 59px;
+    background-image: url('/img/asset-1-copy.png');
+  }
+}
+
+
+/* fintech directions */
+
+.ft-dir-logo {
+  width: 135px;
+  height: 137px;
+  background-size: 135px;
+  background-image: url('/img/group-11@3x.png');
+}
+.ft-dir-big-logo {
+  width: 236px;
+  height: 241px;
+  background-size: 236px;
+  background-image: url('/img/group-11@3x.png');
+}
+@media (max-width: 1110px) {
+  .ft-dir-big-logo {
+    width: 118px;
+    height: 120.5px;
+    background-size: 118px;
+    background-image: url('/img/group-11@3x.png');
+  }
+}
+@media (max-width: 959px) {
+  .ft-dir-logo {
+    width: 67px;
+    height: 68px;
+    background-size: 68px;
+    background-image: url('/img/group-11.png');
+  }
+}
+
+
+/* fintech goals */
+
+.ft-cross {
+  width: 36px;
+  height: 36px;
+}
+.ft-cross-v {
+  border-right: 2px solid #c3c3c3;
+  height: 100%;
+}
+.ft-cross-h {
+  border-bottom: 2px solid #c3c3c3;
+  height: 50%;
+}
+@media (max-width: 959px) {
+  .ft-cross {
+    width: 18px;
+    height: 18px;
+  }
+  .ft-cross-v {
+    border-right: 1px solid #c3c3c3;
+  }
+  .ft-cross-h {
+    border-bottom: 1px solid #c3c3c3;
+  }
+}
+
+
+/* fintech head */
+
+.ft-head-skorobogatova {
+  width: 144px;
+  height: 144px;
+  background-size: 144px;
+  background-image: url('/img/photo-olga-b-w@3x.png');
+}
+@media (max-width: 959px) {
+  .ft-head-skorobogatova {
+    width: 72px;
+    height: 72px;
+    background-size: 72px;
+    background-image: url('/img/photo-olga-b-w.png');
+  }
+}
+
+.ft-head-solonin {
+  width: 144px;
+  height: 144px;
+  background-size: 144px;
+  background-image: url('/img/sergey-solonin-b-w@3x.png ');
+}
+@media (max-width: 959px) {
+  .ft-head-solonin {
+    width: 72px;
+    height: 72px;
+    background-size: 72px;
+    background-image: url('/img/sergey-solonin-b-w.png ');
+  }
+}
+
+
+/* fintech news */
+
+.ft-news-link {
+  color: #00aa82;
+  text-decoration: underline;
+}
+.ft-news-date {
+  color: #00aa82;
+  margin-bottom: 15px;
+}
+@media (max-width: 959px) {
+  .ft-news-date {
+    margin-bottom: 7px;
+  }
+}
+
+.ft-button {
+  border: 2px solid #00aa82;
+  padding: 30px;
+}
+@media (max-width: 959px) {
+  .ft-button {
+    border: 1px solid #00aa82;
+    padding: 15px;
+  }
+}
+
+
+/* colors */
+
+.uk-block-muted {
+  background: #f6f6f6;
+}
+
+.ft-greenblock {
+  background: #2ca27b;
+  color: #ffffff;
+}
+
+.ft-lightgreenblock {
+  background:#35ab87;
+  color: #ffffff;
+}
+
+/*
+.uk-slidenav:before {
+  color: #a2a2a2;
+}
+*/
+.uk-slidenav:hover,
+.uk-slidenav:focus {
+  color: #2ca27b;
+}
+/*
+.uk-slidenav:active {
+  color: rgba(50, 50, 50, 0.9);
+}
+*/
+
+
+
+/* margins, padding & sizes */
+
+.ft-margin-large-right {
+  margin-right: 50px;
+}
+.ft-margin-xlarge-right {
+  margin-right: 100px;
+}
+.ft-add-margin-top {
+  margin-top: 15px;
+}
+.ft-add-margin-bottom {
+  margin-bottom: 15px;
+}
+.ft-add-margin-right {
+  margin-right: 15px;
+}
+@media (max-width: 959px) {
+  .ft-margin-large-right {
+    margin-right: 25px;
+  }
+  .ft-margin-xlarge-right {
+    margin-right: 50px;
+  }
+  .ft-add-margin-top {
+    margin-top: 7.5px;
+  }
+  .ft-add-margin-bottom {
+    margin-bottom: 7.5px;
+  }
+  .ft-add-margin-right {
+    margin-right: 7.5px;
+  }
+}
+
+.ft-add-padding-bottom {
+  padding-bottom: 10px;
+}
+
+.ft-add-padding-top {
+  padding-top: 15px;
+}
+@media (max-width: 959px) {
+  .ft-add-padding-top {
+    padding-top: 7.5px;
+  }
+}
+
+.uk-block {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media (max-width: 959px) {
+  .uk-block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.ft-1-4-small-collapse {
+  display: block;
+}
+.ft-3-4-small-expand {
+  width: 75%;
+}
+@media (max-width: 959px) {
+  .ft-1-4-small-collapse {
+    display: none;
+  }
+  .ft-3-4-small-expand {
+    width: 100%;
+    margin-left: 15px;
+  }
+}
+
+.ft-canvas {
+  padding: 0 50px;
+}
+@media (max-width: 959px) {
+  .ft-canvas {
+    padding: 0 25px;
+  }
+}
+
+/* wtf */
+@media (min-width: 960px) {
+  .uk-block-large {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+
+/* fonts */
+
+@font-face {
+  font-family: TipografiaRamisDecimaMonoX;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -1.5px;
+  src: url('/fonts/TipografiaRamisDecimaMonoX.eot');
+  src: url('/fonts/TipografiaRamisDecimaMonoX.eot') format('embedded-opentype'),
+    url('/fonts/TipografiaRamisDecimaMonoX.woff2') format('woff2'),
+    url('/fonts/TipografiaRamisDecimaMonoX.woff') format('woff'),
+    url('/fonts/TipografiaRamisDecimaMonoX.ttf') format('truetype'),
+    url('/fonts/TipografiaRamisDecimaMonoX.svg#TipografiaRamisDecimaMonoX') format('svg');
+}
+
+@font-face {
+  font-family: TipografiaRamisDecimaMonoXBold;
+  src: url('/fonts/TipografiaRamisDecimaMonoXBold.eot');
+  src: url('/fonts/TipografiaRamisDecimaMonoXBold.eot') format('embedded-opentype'),
+    url('/fonts/TipografiaRamisDecimaMonoXBold.woff2') format('woff2'),
+    url('/fonts/TipografiaRamisDecimaMonoXBold.woff') format('woff'),
+    url('/fonts/TipografiaRamisDecimaMonoXBold.ttf') format('truetype'),
+    url('/fonts/TipografiaRamisDecimaMonoXBold.svg#TipografiaRamisDecimaMonoXBold') format('svg');
+}
+
+.uk-h1 {
+  font-family: TipografiaRamisDecimaMonoX;
+  font-size: 64px;
+  letter-spacing: -3px;
+}
+.uk-h2 {
+  font-family: TipografiaRamisDecimaMonoX;
+  font-size: 36px;
+  letter-spacing: -1.8px;
+}
+.uk-h3 {
+  font-family: TipografiaRamisDecimaMonoX;
+  font-size: 24px;
+  letter-spacing: -1.2px;
+}
+.uk-h4 {
+  font-family: TipografiaRamisDecimaMonoX;
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+.uk-text-small {
+  font-family: TipografiaRamisDecimaMonoX;
+  font-size: 12px;
+}
+
+@media (max-width: 959px) {
+  .uk-h1 {
+    font-size: 32px;
+    letter-spacing: -1.5px;
+  }
+  .uk-h2 {
+    font-size: 18px;
+    letter-spacing: -0.9px;
+  }
+  .uk-h3 {
+    font-size: 12px;
+    letter-spacing: -0.6px;
+  }
+  .uk-h4 {
+    font-size: 10px;
+    letter-spacing: -0.5px;
+  }
+  .uk-text-small {
+    font-size: 6px;
+  }
+}
