@@ -1,0 +1,14 @@
+/* top */
+
+.ft-top-logo {
+  width: 400px;
+  height: 120px;
+  background-image: url('/img/en/logo_en_@2x.png');
+}
+@media (max-width: 959px) {
+  .ft-top-logo {
+    width: 200px;
+    height: 60px;
+    background-image: url('/img/en/logo_en.png');
+  }
+}
