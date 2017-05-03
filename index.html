@@ -584,7 +584,8 @@
 
     self.sortedNews = ko.computed(function() {
       return self.news().sort(function(left, right) {
-        return right.date - left.date;
+        return right.date.getTime() === left.date.getTime() ?
+                right.id - left.id : right.date - left.date;
       });
     });
 
