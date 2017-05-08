@@ -398,7 +398,7 @@
 </div>
 
 
-<div class="uk-block uk-block-large" id="ft-news">
+<div class="uk-block uk-block-large" data-bind="setNewsScrollTop">
   <div class="uk-container uk-container-center">
     <div class="uk-h1 uk-text-center">НОВОСТИ И ПРЕЗЕНТАЦИИ</div>
   </div>
@@ -599,7 +599,7 @@
 
     self.scrollToNews = function() {
       $('html, body').animate({
-        scrollTop: $("#ft-news").offset().top
+        scrollTop: $(self.targetNewsScrollTop).offset().top
       }, 500);
     }
 
@@ -615,6 +615,13 @@
       self.scrollToNews();
     }
   }
+
+  ko.bindingHandlers.setNewsScrollTop = {
+    init: function(element, valueAccessor, allBindings,
+        viewModel, bindingContext) {
+      bindingContext.$data.targetNewsScrollTop = element;
+    },
+  };
 
   ko.applyBindings(new NewsVM());
 
