@@ -400,7 +400,7 @@
 
 <div class="uk-block uk-block-large" data-bind="setNewsScrollTop">
   <div class="uk-container uk-container-center">
-    <div class="uk-h1 uk-text-center">НОВОСТИ И ПРЕЗЕНТАЦИИ</div>
+    <div class="uk-h1 uk-text-center">НОВОСТИ</div>
   </div>
 </div>
 
@@ -423,32 +423,46 @@
   <!-- short news -->
   <div class="uk-container uk-container-center"  data-bind="css: { 'uk-hidden': !showShortNews() }">
     <div data-uk-slideset="{default: 2}">
-      <div class="uk-slidenav-position">
 
-        <ul class="uk-grid uk-text-left uk-slideset ft-equalheight-container" data-bind="foreach: sortedNews">
-          <li class="ft-equalheight-element">
-            <div class="uk-h3 ft-news-date" data-bind="text: textDate()"></div>
-            <div class="uk-h2 ft-add-margin-bottom ft-news-head" data-bind="html: head"></div>
-            <div class="uk-h3"><div class="uk-display-inline ft-news-lead" data-bind="html: lead"></div>
-              <a href="#" class="ft-news-link" data-bind="click: $root.showNews">Подробнее</a>
-            </div>
-          </li>
-        </ul>
+      <div class="uk-grid">
+        <div class="uk-width-1-10">
+          <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>
+        </div>
+        <div class="uk-width-8-10 uk-slidenav-position">
+          <ul class="uk-grid uk-text-left uk-slideset" data-bind="foreach: sortedNews">
+            <li>
+              <div class="uk-h3 ft-news-date" data-bind="text: textDate()"></div>
+              <div class="uk-h2 ft-add-margin-bottom ft-news-head" data-bind="html: head"></div>
+              <div class="uk-h3"><div class="uk-display-inline ft-news-lead" data-bind="html: lead"></div>
+                <a href="#" class="ft-news-link" data-bind="click: $root.showNews">Подробнее</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="uk-width-1-10">
+          <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>
+        </div>
       </div>
 
-      <div class="uk-block uk-text-center uk-padding-bottom-remove">
-        <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>
-        <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>
-      </div>
+    </div>
+  </div>
+
+</div>
 
 
 <div class="uk-block uk-block-large">
+  <div class="uk-container uk-container-center">
+    <div class="uk-h1 uk-text-center">ПРЕЗЕНТАЦИИ</div>
+  </div>
+</div>
+
+<div class="uk-block uk-block-large uk-padding-top-remove">
   <div class="uk-container uk-container-center">
     <div class="uk-grid uk-text-left" data-uk-grid-margin>
         <div class="uk-width-1-3 uk-container-center">
           <a href="Ассоциация ФинТех.pdf" class="uk-link-reset">
             <div class="uk-panel uk-panel-body uk-text-center uk-h3 ft-button">
-              Смотреть презентацию
+              Смотреть презентацию<p></p>&nbsp;
             </div>
           </a>
         </div>
@@ -462,13 +476,6 @@
     </div>
   </div>
 </div>
-
-
-    </div>
-  </div>
-
-</div>
-
 
 <div class="uk-block uk-block-large uk-block-muted">
   <div class="uk-container uk-container-center">
