@@ -72,84 +72,23 @@
 </div>
 
 <div class="uk-block uk-block-large uk-text-center uk-padding-top-remove">
-
   <div data-uk-slideset="{default: 1}">
-    <div class="uk-slidenav-position">
-
-      <ul class="uk-grid uk-slideset ft-equalheight-container">
+    <div class="uk-grid" data-uk-grid-margin>
+      <div class="uk-width-1-10">
+        <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>
+      </div>
+      <div class="uk-width-8-10 uk-slidenav-position">
+        <ul class="uk-nav uk-text-center uk-slideset ft-equalheight-container" data-bind="foreach: tasks">
           <li class="ft-equalheight-element">
-            <div class="uk-grid uk-text-center" data-uk-grid-margin>
-              <div class="uk-width-1-6"></div>
-              <div class="uk-width-4-6">
-                <div class="uk-h2">Проводит исследования, анализирует тенденции, обобщает международный опыт</div>
-              </div>
-              <div class="uk-width-1-6"></div>
-            </div>
+            <div class="uk-h2" data-bind="text: $data"></div>
           </li>
-          <li class="ft-equalheight-element">
-            <div class="uk-grid uk-text-center" data-uk-grid-margin>
-              <div class="uk-width-1-6"></div>
-              <div class="uk-width-4-6">
-                <div class="uk-h2">Формирует перечень приоритетных направлений работы</div>
-              </div>
-              <div class="uk-width-1-6"></div>
-            </div>
-          </li>
-          <li class="ft-equalheight-element">
-            <div class="uk-grid uk-text-center" data-uk-grid-margin>
-              <div class="uk-width-1-6"></div>
-              <div class="uk-width-4-6">
-                <div class="uk-h2">Реализует собственные проекты и участвует в проектах других организаций</div>
-              </div>
-              <div class="uk-width-1-6"></div>
-            </div>
-          </li>
-          <li class="ft-equalheight-element">
-            <div class="uk-grid uk-text-center" data-uk-grid-margin>
-              <div class="uk-width-1-6"></div>
-              <div class="uk-width-4-6">
-                <div class="uk-h2">Координирует разработку программного обеспечения, стандартов, платформ и протоколов</div>
-              </div>
-              <div class="uk-width-1-6"></div>
-            </div>
-          </li>
-          <li class="ft-equalheight-element">
-            <div class="uk-grid uk-text-center" data-uk-grid-margin>
-              <div class="uk-width-1-6"></div>
-              <div class="uk-width-4-6">
-                <div class="uk-h2">Готовит предложения по созданию и изменению законодательства</div>
-              </div>
-              <div class="uk-width-1-6"></div>
-            </div>
-          </li>
-          <li class="ft-equalheight-element">
-            <div class="uk-grid uk-text-center" data-uk-grid-margin>
-              <div class="uk-width-1-6"></div>
-              <div class="uk-width-4-6">
-                <div class="uk-h2">Проводит конференции, реализует образовательные и просветительские проекты</div>
-              </div>
-              <div class="uk-width-1-6"></div>
-            </div>
-          </li>
-          <li class="ft-equalheight-element">
-            <div class="uk-grid uk-text-center" data-uk-grid-margin>
-              <div class="uk-width-1-6"></div>
-              <div class="uk-width-4-6">
-                <div class="uk-h2">Представляет интересы и оказывает помощь членам Ассоциации</div>
-              </div>
-              <div class="uk-width-1-6"></div>
-            </div>
-          </li>
-      </ul>
-
+        </ul>
+      </div>
+      <div class="uk-width-1-10">
+        <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>
+      </div>
     </div>
-    <div class="uk-block uk-padding-bottom-remove">
-      <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>
-      <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>
-    </div>
-
   </div>
-
 </div>
 
 
@@ -666,8 +605,18 @@
     }
   }
 
-  function NewsVM() {
+  function ViewModel() {
     var self = this;
+
+    self.tasks = [
+      'Проводит исследования, анализирует тенденции, обобщает международный опыт',
+      'Формирует перечень приоритетных направлений работы',
+      'Реализует собственные проекты и участвует в проектах других организаций',
+      'Координирует разработку программного обеспечения, стандартов, платформ и протоколов',
+      'Готовит предложения по созданию и изменению законодательства',
+      'Проводит конференции, реализует образовательные и просветительские проекты',
+      'Представляет интересы и оказывает помощь членам Ассоциации',
+    ];
 
     // please specify 0-based months, i.e. 0 for January
     self.news = ko.observableArray([
@@ -760,7 +709,7 @@
     },
   };
 
-  ko.applyBindings(new NewsVM());
+  ko.applyBindings(new ViewModel());
 
 </script>
 
